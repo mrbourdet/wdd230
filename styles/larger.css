@@ -46,7 +46,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 1rem;
-    grid-row: 100px 1fr; 
+    grid-row: .25fr 1fr; 
     background: white;
   }
   
