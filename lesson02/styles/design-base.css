@@ -1,48 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-body{
-    font-family: 'Raleway', sans-serif;
-} 
+
 body {
-    display: grid;
-    width: 500px;
-    grid-template: auto auto 1fr auto / auto;
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  gr
+  /* grid-template: 1fr 1fr / 1fr 1fr; */
   }
 header {
     background: #1D4D72;
     padding: 2rem;
     text-align: center;
     color: white;
+    width: 90vw;
   }
-.profile {
-    vertical-align: middle;
-    box-shadow: 4px 4px 10px #333;
-    border-radius: 10px;
-    margin: 5px;
+img {
+  max-width: 90%;
 }
-nav {
-    display: flex;
-    background: #333;
-    padding: 1rem;
-    text-align: center;
-    flex-direction: column;
-  }
-nav a:link{
-    color: white;
-    text-decoration: none;
-    font-weight: normal;
-  }
-nav a:visited{
-    color: white;
-    text-decoration: none;
-    font-weight: normal;
-  }
 ul {
     list-style: none;
 }
+
 main {
     display: grid;
-    grid-template-columns: 1fr;  
-    grid-template-rows: 30px 1fr;  
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: 1fr 1fr;  
     background: white;
   }
   
@@ -57,16 +38,30 @@ h2 {
     font-size: 1em;
     text-align: center;
   }
-.card {
+  .card1 {
+    grid: 1/2 1/2;
+  }
+  .card2 {
+    grid: 2/3 1/2;
+  }
+  .card3 {
+    grid: 1/2 2/3;
+  }
+.card1, .card2, .card3 {
     text-align: center;
-    grid-row: auto;
-    grid-column: 1/2;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 1em;
+    border-color: black;
+    padding: 1em;
+    margin: 1em;
+    background-color:gainsboro;
 }
-  .card h3 {
+
+  .card1 h3 {
     text-align: center;
     color: white;
     background: #1D4D72;
     padding: 1em;
   }
-
   
