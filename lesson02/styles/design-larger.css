@@ -37,13 +37,13 @@
       font-size: 1em;
       text-align: center;
     }
-    .card1 {
+  .card1 {
       grid: 1/2 1/2;
     }
-    .card2 {
+  .card2 {
       grid: 2/3 1/2;
     }
-    .card3 {
+  .card3 {
       grid: 3/4 1/2;
     }
   .card1, .card2, .card3 {
