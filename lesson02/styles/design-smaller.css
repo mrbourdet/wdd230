@@ -19,14 +19,12 @@
   ul {
       list-style: none;
   }
-  
   main {
       display: grid;
       grid-template-columns: 90%;  
       grid-template-rows: 1fr 1fr 1fr;  
       background: white;
     }
-    
   footer {
       background: #1D4D72;
       padding: 1rem;
