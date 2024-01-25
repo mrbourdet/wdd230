@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body{
     font-family: 'Raleway', sans-serif;
 } 
 body {
     display: grid;
-    width: 500px;
     grid-template: auto auto 1fr auto / auto;
   }
 header {
     background: #1D4D72;
     padding: 2rem;
-    text-align: center;
+    text-align: left;
     color: white;
   }
 .profile {
@@ -20,22 +24,59 @@ header {
     margin: 5px;
 }
 nav {
-    display: flex;
     background: #333;
+    max-width: 100vw; 
+  }
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0,0,0,.3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+  }
+  
+  #menu::before {
+    content: "☰";
+  }
+  
+  #menu.open::before {
+    content: "❎";
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navigation a {
+    display: none;
     padding: 1rem;
     text-align: center;
-    flex-direction: column;
-  }
-nav a:link{
-    color: white;
     text-decoration: none;
-    font-weight: normal;
+    color: #fff;
+    font-weight: 700;
   }
-nav a:visited{
-    color: white;
-    text-decoration: none;
-    font-weight: normal;
+  .navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 900;
   }
+  
+  /* when the button is clicked - the open class is toggled (added/removed) */
+  .open a {
+    display: block;
+  }
+  
+  .active::before {
+    content: "📍";  /* just a wayfinding symbol for the user */
+  }
+  
 ul {
     list-style: none;
 }
@@ -55,18 +96,30 @@ footer {
 h2 {
     font-style: normal;
     font-size: 1em;
+    padding: .5em;
     text-align: center;
   }
 .card {
-    text-align: center;
+    text-align: left;
     grid-row: auto;
     grid-column: 1/2;
 }
+.card ul {
+  padding-left: 1em;
+}
+.card ul li{
+  padding-left: 1em;
+  padding-top: .25em;
+  padding-bottom: .25em;
+}
   .card h3 {
-    text-align: center;
+    text-align: left;
     color: white;
     background: #1D4D72;
     padding: 1em;
   }
+#frame {
+  padding: 5px;
+}
 
   
