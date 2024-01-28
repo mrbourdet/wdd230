@@ -169,3 +169,8 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
+.paragraph-font {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+}
+
