@@ -18,15 +18,16 @@
         text-align: center;
     }
     body p {
-        background-color: rgba(255,255,255,.5);
+        /* background-color: rgba(255,255,255,.5); */
         padding: 1rem;
         display: inline-block;
     }
     body img {
-        padding-right: 1rem;
+        padding: 1rem;
         }
     header {
-        background: #1D4D72;
+        align-items: center;
+        background: #8ecae6;
         padding: 2rem;
         text-align: left;
         color: white;
@@ -34,7 +35,6 @@
     header h1 {
         font-family: 'Alegreya SC', sans-serif;
         font-weight: normal;
-        display: inline;
     }
     header img {
         padding-right: 1rem;
@@ -49,10 +49,10 @@
         padding: 3px 7px 6px;
         background-color: #eee;
         color: #000;
-        position: fixed;
+            position: fixed;
         top: 0px;
         right: 0px;
-        }
+    }
         
     #menu::before {
         content: "☰";
@@ -66,7 +66,7 @@
         display: flex;
         flex-direction: column;
         list-style: none;
-        background-color: #023047;
+        background-color: #333;
         color: #fff;
         }
         
@@ -76,12 +76,11 @@
         text-align: center;
         text-decoration: none;
         color: #fff;
-        font-weight: 700;
         }
     .navigation a:hover {
         background-color: #bbb;
         color: #333;
-        font-weight: 900;
+        font-weight: 700;
         }
         
         /* when the button is clicked - the open class is toggled (added/removed) */
@@ -112,10 +111,14 @@
     h2 {
         font-family: 'Alegreya SC', sans-serif;
         font-style: normal;
-        font-size: 1em;
+        font-weight: normal;
+        font-size: 2em;
         padding: .5em;
-        text-align: center;
+        text-align: left;
         }
+    #hero {
+        display:inline;
+    }
     .card {
         text-align: left;
         grid-row: auto;
@@ -140,3 +143,103 @@
     #frame {
         padding: 5px;
     }  
+@media screen  and (max-width: 768px) {
+    
+        body {
+          font-family: 'Roboto', sans-serif;
+          display: flex;
+          flex-direction: row;
+          }
+        .navigation {
+            background-color: #023047;
+            color: #fff;
+            }   
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        nav {
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+        nav a {
+            flex: 1 1 100%;
+            }
+        h1 {
+            font-size: 2.5rem;
+            margin-left: 0;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+    
+        #menu {
+            display: none; /* hide hamburger button */
+        }
+    
+        .navigation {
+            flex-direction: row;
+        }
+    
+        .navigation a {
+            display: block;
+            flex: 1 1 100%;
+        }
+      } 
+@media screen  and (max-width: 1024px) {
+    h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}  
+
+}
+@media screen  and (max-width: 1200px) {
+    h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+}
