@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link type="text/css" rel="stylesheet" href="styles/base.css"> 
     <!-- max-width: 480px -->
-    <link type="text/css" rel="stylesheet" href="styles/standard.css"> 
+    <!-- <link type="text/css" rel="stylesheet" href="styles/standard.css">  -->
     <!-- max-width: 768px -->
     <!-- <link type="text/css" rel="stylesheet" href="styles/large.css">  -->
     <!-- max-width: 1024px -->
@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    
     <header>
         <h1><img src="images/rsz_vscc-logo2.png">Valley Stream Chamber of Commerce</h1>
     </header>
@@ -34,45 +35,47 @@
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Discover</a></li>
             <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
+            <li><a href="#join">Join</a></li>
         </ul>
     </nav>
+    
+    <p><img src="images/rockaway.jpg" alt="Rockaway Parkway Business District" id="hero">
+        <h2 id="hero-caption">Money Magazine names Valley Stream best place to live in New York</h2></p>
+    <div class="buttons">
+        <button class="button-1">Read Article</button>
+        <a href="#join"><button class="button-2">Join Us!</button></a>
+    </div>
+    <div id="mode">
+        🕶️
+    </div>
     <main>
-        
-        <h2>Money Magazine names Valley Stream best place to live in New York</h2>
-        <p><img src="images/rockaway.jpg" alt="Rockaway Parkway Business District" id="hero"></p>
-        <p>Valley Stream was ranked as the best place to live in New York by Money Magazine.</p>
-
-        <p>First settled by Scottish immigrants in 1834, Valley Stream is a Nassau County village that attracts residents with a reputation of being ‘neat, clean and safe,’” the article states. “The location is a big draw — it’s just 35 minutes from Manhattan, near two major highway arteries and served by the Long Island Rail Road.”</p>
-        <button>Read Article</button>
-        <h2>About Us</h2>
         <section class="card">
-            <h3>Upcoming Events</h3>
+            <h3>Current Events</h3>
             <ul>
-                <li><a href="#">Event 1</a></li>
-                <li><a href="#">Event 2</a></li>
-                <li><a href="#">Event 3</a></li>
+                <li>No events scheduled</li>
             </ul>
         </section>
         <section class="card">
-            <h3>Meet the Board</h3>
+            <h3>Support these VSCC Members</h3>
             <ul>
-                <li>Board 1</li>
+                <li><img src="images/ndis.png"></li>
+                <li><img src="images/ndis.png"></li>
+                <li><img src="images/ndis.png"></li>
             </ul>
         </section>
         <section class="card">
             <h3>Community</h3>
             <ul>
-                <li>Community 1</li>
+                <li><img src="images/weather-dark.png"></li>
             </ul>
         </section>
-        <h2>Join Us</h2>
-        <section class="card">
-            <h3>Benefits of Membership</h3>
+        
+        <section id="join" class="card">
+            <a name="join"></a><h3>Join Us</h3>
             <ul>
-                <li><a href="#">Benefit 1</a></li>
-                <li><a href="#">Benefit 2</a></li>
-                <li><a href="#">Benefit 3</a></li>
+                <li>Grow your network.</li>
+                <li>Learn from your peers.</li>
+                <li>Help the community thrive!</li>
             </ul>
         </section>
 
@@ -85,5 +88,6 @@
 </footer>
 <script src="scripts/getdates.js"></script>
 <script src="scripts/menu.js"></script>
+<script src="scripts/mode.js"></script>
 
 </html>
