@@ -63,8 +63,8 @@
         padding-right: 1rem;
         padding-left: 1rem;
         /* width: 87px; */
-        aspect-ratio: 3/1;
         width: 60px;
+        height: 20px
     }
     nav {
         background: var(--primary-color);
