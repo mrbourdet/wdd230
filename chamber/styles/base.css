@@ -262,8 +262,8 @@
 }
 #mode {
 	position: absolute;
-	top: 1rem;
-	right: 1rem;
+	top: 5px;
+	left: 405px;
 	font-size: 2rem;
 	cursor: pointer;
 	font-size: 2rem;
