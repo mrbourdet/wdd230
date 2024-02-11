@@ -1,0 +1,138 @@
+@media screen and (max-width: 1024px) {
+
+    body {
+        /* flex-direction: row; */
+        width: 800px;
+    }
+
+    #hero {
+        /* position: absolute;
+            top: 21.5vh;
+            left: 0; */
+        width: 800px;
+    }
+
+    #hero-caption {
+        position: absolute;
+        top: 15vb;
+        left: 2vi;
+        color: #000;
+        font-weight: 900;
+        background: rgba(204, 204, 204, 0.5);
+        width: 700px;
+        font-size: 18pt;
+
+        .navigation {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav {
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+
+        nav a {
+            flex: 1 1 100%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        #menu {
+            display: none;
+            /* hide hamburger button*/
+        }
+
+        .navigation {
+            flex-direction: row;
+        }
+
+        .navigation a {
+            display: block;
+            flex: 1 1 100%;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        body {
+            /* flex-direction: row; */
+            width: 800px;
+        }
+
+        #hero {
+            /* position: absolute;
+        top: 21.5vh;
+        left: 0; */
+            width: 1200px;
+        }
+
+        #hero-caption {
+            position: absolute;
+            top: 15vb;
+            left: 2vi;
+            color: #000;
+            font-weight: 900;
+            background: rgba(204, 204, 204, 0.5);
+            width: 1000px;
+            font-size: 18pt;
+
+            .navigation {
+                background-color: var(--primary-color);
+                color: var(--secondary-color);
+            }
+
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            nav {
+                justify-content: flex-end;
+                flex-direction: row;
+            }
+
+            nav a {
+                flex: 1 1 100%;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                margin-left: 0;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            #menu {
+                display: none;
+                /* hide hamburger button*/
+            }
+
+            .navigation {
+                flex-direction: row;
+            }
+
+            .navigation a {
+                display: block;
+                flex: 1 1 100%;
+            }
+        }
