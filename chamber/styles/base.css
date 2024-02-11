@@ -64,6 +64,7 @@
         padding-left: 1rem;
         /* width: 87px; */
         width: 60px;
+        height: 20px;
     }
     nav {
         background: var(--primary-color);
