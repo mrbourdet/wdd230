@@ -62,9 +62,7 @@
     header img {
         padding-right: 1rem;
         padding-left: 1rem;
-        /* width: 87px; */
-        width: 60px;
-        height: 20px
+        height: 12px
     }
     nav {
         background: var(--primary-color);
