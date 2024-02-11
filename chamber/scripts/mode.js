@@ -10,9 +10,9 @@ modeButton.addEventListener("click", () => {
 		body.style.color = "#fff";
 		modeButton.textContent = "🔆";
 	} else {
-		main.style.background = "#eee";
+		main.style.background = "#fff";
 		main.style.color = "#000";
-        body.style.background = "#eee";
+        body.style.background = "#fff";
 		body.style.color = "#000";
 		modeButton.textContent = "🕶️";
 	}
