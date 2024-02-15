@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@media screen and (min-width: 540px){
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@media screen and (min-width: 400px){
  
 body{
     font-family: 'Raleway', sans-serif;
@@ -17,8 +19,8 @@ header {
   }
 .profile {
     vertical-align: middle;
-    box-shadow: 4px 4px 10px #333;
-    border-radius: 10px;
+    /* box-shadow: 4px 4px 10px #333; */
+    /* border-radius: 10px; */
     margin: 5px;
 }
 nav {
@@ -48,7 +50,7 @@ ul {
 
 .navigation {
   flex-direction: row;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .navigation a {

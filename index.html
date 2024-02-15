@@ -30,7 +30,7 @@
 
 <body>
     <header>
-        <h1><img class="profile" src="images/profile-pic-sm.jpg" alt="Profile Pic Michael R. Bourdet">     Michael R. Bourdet</h1>
+        <h1><img class="profile" src="images/profile-pic-sm.webp" alt="Profile Pic Michael R. Bourdet">     Michael R. Bourdet</h1>
     </header>
     <button id="menu" value ="Menu"></button>
     <nav>
@@ -43,6 +43,16 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px )" srcset="images/manhattan-temple-400w.webp">
+                <source media="(max-width: 960px)" srcset="images/manhattan-temple-960w.webp">
+                <img src="images/manhattan-temple-960w.webp" alt="Manhattan NY Temple">
+            </picture>
+            <div class="herolabel">
+                <p>Manhattan NY Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
