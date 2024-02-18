@@ -3,8 +3,8 @@
  
     main { /* Change for media queries*/
         display: grid;
-        grid-template-columns: 4;
-        grid-template-rows: 2;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
         background: white;
         }
       .card {
