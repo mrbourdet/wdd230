@@ -1,5 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
-@media screen  and (max-width: 1024px) {
-    
+@media screen  and (min-width: 1024px) {
+ 
+    main { /* Change for media queries*/
+        display: grid;
+        grid-template-columns: 3;
+        grid-template-rows: 2;
+        background: white;
+        }
+      .card {
+          text-align: center;
+      }
+      .card:nth-of-type(1){
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      .card:nth-of-type(2){
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+      .card:nth-of-type(3){
+        grid-column: 3/4;
+        grid-row: 1/2;
+      }
+      .card:nth-of-type(4){
+        grid-column: 1/4;
+        grid-row: 2/3;
+      }
+      .card ul {
+          padding-left: .5em;
+      }
+      .card ul li{
+          padding-left: .5em;
+          padding-top: .25em;
+          padding-bottom: .25em;
+      }
+      .card h3 {
+          font-family: var(--heading-font);
+          font-size: 2vw;
+          font-weight: 600;
+          /* text-align: left; */
+          color: white;
+          background: var(--primary-color);
+          padding: .5em;
+          }
 
-}
+      #menu {
+        display: none; /* hide hamburger button */
+      }
+    
+      .navigation {
+        flex-direction: row;
+      }
+    
+      .navigation a {
+        display: block;
+        flex: 1 1 100%;
+      }
+  } 
