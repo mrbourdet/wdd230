@@ -4,7 +4,7 @@
     main { /* Change for media queries*/
       display: grid;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 33% 33% 33%;
+      /* grid-template-rows: 33% 33% 33%; */
       background: white;
       }
     .card {
@@ -26,23 +26,7 @@
       grid-column: 2/3;
       grid-row: 2/3;
     }
-    .card ul {
-        padding-left: .5em;
-    }
-    .card ul li{
-        padding-left: .5em;
-        padding-top: .25em;
-        padding-bottom: .25em;
-    }
-    .card h3 {
-        font-family: var(--heading-font);
-        font-size: 2vw;
-        font-weight: 600;
-        /* text-align: left; */
-        color: white;
-        background: var(--primary-color);
-        padding: .5em;
-        }
+
     #menu {
       display: none; /* hide hamburger button */
     }
