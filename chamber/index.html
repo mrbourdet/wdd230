@@ -26,7 +26,7 @@
 
 <body>
     <header>
-        <h1><img src="images/images.webp" id="logo" alt="logo" name="logo">Valley Stream Chamber of Commerce</h1>
+        <h1><img src="images/images.webp" id="logo" alt="logo">Valley Stream Chamber of Commerce</h1>
     </header>
     <nav>
         <ul class="navigation">
@@ -53,11 +53,11 @@
             id="hero">
     </picture>
     <h3>Money Magazine names Valley Stream best place to live in New York</h3>
-    <button id="menu" value="Menu" name="menu-button"></button>
+    <button id="menu" value="Menu" type="button"></button>
 
     <div class="buttons">
-        <a href="https://money.com/best-places-to-live-every-state-us/" target="_blank"><button class="button-1">Read Article</button></a>
-        <a href="#join"><button class="button-2">Join Us!</button></a>
+        <button class="button-1" type="button" onclick="location.href='https://money.com/best-places-to-live-every-state-us/'">Read Article</button>
+        <button class="button-2" type="button">Join Us!</button>
     </div>
     <div id="mode"> 🕶️ </div>
     <main>
@@ -123,7 +123,6 @@
         </section>
 
         <section id="join" class="card">
-            <a name="join"></a>
             <h3>Join Us</h3>
             <ul>
                 <li>Grow your network.</li>
@@ -132,13 +131,15 @@
             </ul>
         </section>
     </main>
+    <footer>
+        <p id="curyear"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/mode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
-<footer>
-    <p id="curyear"></p>
-    <p id="lastModified"></p>
-</footer>
-<script src="scripts/getdates.js"></script>
-<script src="scripts/menu.js"></script>
-<script src="scripts/mode.js"></script>
-<script src="scripts/windchill.js"></script>
+
+
 </html>
