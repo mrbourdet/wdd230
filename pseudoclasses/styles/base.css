@@ -1,0 +1,18 @@
+a {
+    color:blue;
+}
+a:link{
+    color:blueviolet;
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    color:magenta;
+}
+a:active{
+    color:chartreuse;
+}
+a:focus{
+  background-color: yellow;
+}
