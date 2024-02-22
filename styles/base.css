@@ -14,7 +14,7 @@ body {
   }
 header {
     background: #1D4D72;
-    padding: 1rem;
+    padding: .25rem;
     text-align: left;
     color: white;
   }
@@ -57,7 +57,8 @@ nav {
   
   .navigation a {
     display: none;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: center;
     text-decoration: none;
     color: #fff;
