@@ -14,8 +14,8 @@
       background: white;
     }
     .discover-hero:hover {
-      box-shadow: 0 0 40px #333;
-      border-radius: 0 100px;
+      box-shadow: 0 0 20px maroon;
+      border-radius: 100px;
     }
     .discover-col1{
         grid-column: 1/5;
