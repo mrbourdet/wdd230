@@ -6,8 +6,30 @@
       grid-template-columns: 50% 50%;
       background: white;
       }
-    .card {
-        text-align: center;
+    .discover-main {
+      /* Change fo media queries*/
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(12, 1fr);
+      background: white;
+    }
+    .discover-hero:hover {
+      box-shadow: 0 0 40px #333;
+      border-radius: 0 100px;
+    }
+    .discover-col1{
+        grid-column: 1/5;
+        padding: 0 1em 1em 1em;
+        border-style:solid;
+        border-width: 8px;
+        border-color: maroon;
+    }
+    .discover-col2{
+        grid-column: 5/13;
+        padding: 0 1em 1em 1em;
+        border-style:solid;
+        border-width: 8px;
+        border-color: maroon;
     }
     .card:nth-of-type(1){
       grid-column: 1/2;

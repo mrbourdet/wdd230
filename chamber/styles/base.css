@@ -110,8 +110,91 @@ ul {
 main {
     /* Change fo media queries*/
     display: grid;
-    flex-direction: row;
     background: white;
+}
+.discover-main {
+    /* Change fo media queries*/
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    background: white;
+    gap: 2px;
+    
+}
+.discover-col1{
+    grid-column: 1/2;
+    gap: 2px;
+}
+.discover-col2{
+    grid-column: 1/2;
+    gap: 2px;
+}
+.discover-card {
+    text-align: left;
+    
+    /* display: flex;
+        flex-direction: column; */
+}
+.discover-card p {
+    padding: .5em;
+}
+.discover-card ul {
+    padding-left: .5em;
+}
+
+.discover-card ul li {
+    padding-left: .5em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+.discover-card h3 {
+    font-family: var(--heading-font);
+    font-size: clamp(18px, 1.5vw, 24px);
+    font-weight: 600;
+    /* text-align: left; */
+    color: white;
+    background: var(--primary-color);
+    padding: .5em;
+}
+.discover-card h4 {
+    font-family: var(--heading-font);
+    font-size: clamp(12px, 1.5vw, 18px);
+    font-weight: 500;
+    /* text-align: left; */
+    color: black;
+    background: var(--secondary-color);
+    padding: .5em;
+}
+.discover-hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.discover-hero img {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.discover-herolabel {
+    position: absolute;
+    top: clamp(80px, 13vw, 200px);
+    left: 2vw;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: clamp(3px, 2vw, 10px);
+    /* box-shadow: 0 0 3rem #fff; */
+    opacity: 0.75;
+    font-size: clamp(13px, 3vw, 30px);
+}
+
+.discover-herolabel h2 {
+    margin: 0;
+    font-weight: 900;
+    /* font-size: clamp(13px, 3vw, 30px); */
+    /* font-family:"Great Vibes", serif; */
 }
 
 footer {
