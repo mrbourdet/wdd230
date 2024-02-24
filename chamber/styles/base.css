@@ -205,15 +205,15 @@ footer {
     font-size: clamp(12px, 1.5vw, 18px);
 }
 
-h2 {
+/* h2 {
     font-family: var(--heading-font);
     font-style: normal;
     font-weight: normal;
     font-size: 2em;
     padding: .5em;
     text-align: left;
-    /* z-index: 1; */
-}
+    z-index: 1;
+} */
 
 .hero {
     margin: 10px auto;
