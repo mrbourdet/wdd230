@@ -158,6 +158,7 @@ main {
     padding: .5em;
 }
 .discover-card h3 {
+    width: 80%;
     font-family: var(--body-font);
     font-size: clamp(12px, 1.5vw, 18px);
     font-weight: 500;
@@ -173,9 +174,7 @@ main {
 }
 
 .discover-hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 60%;  
 }
 
 .discover-herolabel {
