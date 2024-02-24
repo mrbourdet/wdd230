@@ -148,7 +148,7 @@ main {
     padding-bottom: .25em;
 }
 
-.discover-card h3 {
+.discover-card h2 {
     font-family: var(--heading-font);
     font-size: clamp(18px, 1.5vw, 24px);
     font-weight: 600;
@@ -157,8 +157,8 @@ main {
     background: var(--primary-color);
     padding: .5em;
 }
-.discover-card h4 {
-    font-family: var(--heading-font);
+.discover-card h3 {
+    font-family: var(--body-font);
     font-size: clamp(12px, 1.5vw, 18px);
     font-weight: 500;
     /* text-align: left; */
