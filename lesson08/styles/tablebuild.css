@@ -34,6 +34,11 @@ thead tr th {
     font-size: larger;
 }
 
+.feature {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 th {
     padding: 7px;
     font-size: larger;
