@@ -1,0 +1,55 @@
+body {
+    font-family: "Lato", Arial, sans-serif;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid lightgray;
+    box-shadow: 0 0 10px gray;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: black;
+    font-size: .85rem;
+}
+
+thead tr th {
+    background-color: #000040;
+    color: white;
+    padding: 1em;
+}
+
+.heading {
+    background-color: #000080;
+    color: white;
+}
+
+#acme {
+    padding: 1em;
+    background-color: #000060;
+    color: white;
+    font-size: larger;
+}
+
+th {
+    padding: 7px;
+    font-size: larger;
+}
+
+tbody tr td {
+    text-align: center;
+    padding: 7px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+tbody tr {
+    background-color: #f8f8ff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #dcdcdc;
+}
