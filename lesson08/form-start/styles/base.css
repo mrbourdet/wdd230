@@ -104,6 +104,7 @@ footer {
     color: #555;
     width: 100%;
     max-width: 400px;
+    appearance: none;
 }
 .wf1 input[type="radio"],
 .wf1 input[type="checkbox"] {
