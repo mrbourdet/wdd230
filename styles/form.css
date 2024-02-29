@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Playfair:ital,opsz,wght@0,5..1200,400;0,5..1200,500;0,5..1200,600;0,5..1200,700;1,5..1200,400;1,5..1200,500;1,5..1200,600;1,5..1200,700&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #023047ff;
+    --secondary-color: #8ecae6ff;
+    --accent1-color: #ffb703ff;
+    --accent2-color: #fb8500ff;
+    --accent3-color: #219ebcff;
+    /* CSS HEX */
+    --sky-blue: #8ecae6ff;
+    --blue-green: #219ebcff;
+    --prussian-blue: #023047ff;
+    --selective-yellow: #ffb703ff;
+    --ut-orange: #fb8500ff;
+
+    --heading-font: 'Playfair', 'Alegreya', serif;
+    --body-font: 'Lato', 'Roboto', sans-serif;
+
+}/*----------- FORM STYLING --------------*/
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6pt;
+    padding: .5rem 2%;
+}
+.wf1 legend {
+    color: var(--primary-color);
+    padding: 0 .5rem;
+}
+.wf1 label{
+    display:block;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size: .9rem;
+}
+.wf1 div {
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size: .9rem;
+}
+.wf1 input[type="password"],
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 input[type="number"]{
+    background-color: #eee;
+    display:block;
+    border: 1px solid #999;
+    border-radius: 6pt;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+.wf1 input[type="submit"]{
+    border: none;
+    background-image:linear-gradient(var(--accent3-color), var(--primary-color));
+    border-radius: 6pt;
+    padding: .8rem;
+    color: #fff;
+    width:96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+.wf1 input:required {
+    border-right: solid 8px red;
+}
+.wf1 input:required:valid {
+    border-right: solid 8px green;
+}
+.wf1 #rangevalue {
+    font-size: larger;
+    font-weight: 700;
+    color: var(--primary-color);
+}

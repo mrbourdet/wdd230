@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development Michael R. Bourdet HTML Form">
+    <meta name="author" content="Michael R. Bourdet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="styles/base.css" type="text/css" rel="stylesheet">
+    <link href="styles/larger.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Michael R. Bourdet - WDD 230 - Web Frontend Development</title>
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Michael R. Bourdet - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mrbourdet.github.io/wdd230/images/rsz_1niagara_street_north_valley_stream_ny_august_11_2022_a.jpg">
+    <meta property="og:url" content="https://mrbourdet.github.io/wdd230/form.html">
+
+</head>
+
+<body>
+    <header>
+        <h1><img class="profile" src="images/profile-pic-sm.webp" alt="Profile Pic Michael R. Bourdet" width="96" height="96">     Michael R. Bourdet</h1>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        
+        <form action="record.html" method="get" class="wf1">
+            <fieldset>
+                <legend>User Information</legend>
+                <label>Username* 
+                    <input type="text" name="name" id="userName" required>
+                </label>
+                <label>Password* 
+                    <input type="password" name="pwd" id="pwd" required
+                    pattern="[A-Za-z0-9]{8,}"
+                    title="May contain letters (upper or lower case) and numbers, and must be at least 8 or more characters">
+                </label>
+                <label>Please confirm password* 
+                    <input type="password" name="pwd2" id="pwd2" required pattern="[A-Za-z0-9]{8,}"
+                    title="May contain letters (upper or lower case) and numbers, and must be at least 8 or more characters">
+                </label>
+                <div id="formmessage"></div>
+                <label>Email* 
+                    <input type="email" name="email" id="email" placeholder="Your byui email address" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
+                </label>
+                <div id="rangevalue">0</div>
+                <label>Page Rating 
+                    <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </label>
+            </fieldset>
+            <input type="submit" value="Send Info">
+        </form>
+    </main>
+    <footer>
+        <p id="curyear"></p>
+        <p id="lastModified"></p>
+    </footer>
+<script src="scripts/getdates.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="scripts/visits.js"></script>
+<script src="scripts/form.js"></script>
+</body>
+
+</html>
