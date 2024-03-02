@@ -1,37 +1,37 @@
 {
     "wardInformation": {
-        "familyName": "SmiHoggeth",
+        "familyName": "Smirnoff",
         "moveInDate": "2023-06-18",
         "numberOfPeople": 6,
         "visitedByBishopric": true,
         "familyMembers": [
             {
-                "name": "Jonathon Ivan Hogge",
+                "name": "Dmitri Ivan Smirnoff",
                 "gender": "Male",
                 "birthdate": "1992-05-17"
             },
             {
-                "name": "Samantha Hogge",
+                "name": "Alina Larisa Smirnoff",
                 "gender": "Female",
                 "birthdate": "1992-02-16"
             },
             {
-                "name": "Kathryn Hogge",
+                "name": "Ekaterina Irina Smirnoff",
                 "gender": "Female",
                 "birthdate": "2016-05-03"
             },
             {
-                "name": "Leah Rosanne Hogge",
+                "name": "Sonya Raisa Smirnoff",
                 "gender": "Female",
                 "birthdate": "2018-08-13"
             },
             {
-                "name": "James Grant Hogge",
+                "name": "Fyodor Sasha Smirnoff",
                 "gender": "Male",
                 "birthdate": "2020-12-03"
             },
             {
-                "name": "Benjamin David Hogge",
+                "name": "Aleksandr Maksimilian Smirnoff",
                 "gender": "Male",
                 "birthdate": "2023-05-04"
             }
