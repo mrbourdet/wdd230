@@ -1,0 +1,40 @@
+{
+    "wardInformation": {
+        "familyName": "SmiHoggeth",
+        "moveInDate": "2023-06-18",
+        "numberOfPeople": 6,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Jonathon Ivan Hogge",
+                "gender": "Male",
+                "birthdate": "1992-05-17"
+            },
+            {
+                "name": "Samantha Hogge",
+                "gender": "Female",
+                "birthdate": "1992-02-16"
+            },
+            {
+                "name": "Kathryn Hogge",
+                "gender": "Female",
+                "birthdate": "2016-05-03"
+            },
+            {
+                "name": "Leah Rosanne Hogge",
+                "gender": "Female",
+                "birthdate": "2018-08-13"
+            },
+            {
+                "name": "James Grant Hogge",
+                "gender": "Male",
+                "birthdate": "2020-12-03"
+            },
+            {
+                "name": "Benjamin David Hogge",
+                "gender": "Male",
+                "birthdate": "2023-05-04"
+            }
+        ]
+    }
+  }
