@@ -37,7 +37,6 @@
         </ul>
     </nav>
     <button id="menu" value="Menu" type="button"></button>
-    <div id="mode"> 🕶️ </div>
     <main>
         <form action="thankyou.html" method="get" class="wf1">
             <fieldset>
@@ -49,7 +48,7 @@
                     <input type="text" name="lname" id="lname" required>
                 </label>
                 <label>Title or Position 
-                    <input type="text" name="title" id="title" required pattern="[a-zA-Z\- ]{7,}">
+                    <input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}">
                 </label>
                 <label>Email* 
                     <input type="email" name="email" id="email" placeholder="me@example.org" title="A valid email address." pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
@@ -58,8 +57,9 @@
                     <input type="text" name="busName" id="busName" required>
                 </label>
                 <label>Business/Organization Description 
-                    <input type="text" name="busDesc" id="busDesc">
-                </label><br>
+                    <textarea name="busDesc" id="busDesc" cols="30" rows="10"></textarea>
+                </label>
+                <br>
                 Membership Level <div id="rangevalue">Gold Membership</div>
                 <label> 
                     <input type="range" id="level" name="level" min="1" max="4" value="4" step="1" list="rangevalues">
@@ -70,7 +70,7 @@
                         <option value="4" label="🥇" name="Gold Membership">Gold Membership</option>
                     </datalist>
                 </label>
-                    <input type="hidden" name="curDateTime" id="curDateTime">
+                <label><input type="hidden" name="curDateTime" id="curDateTime"></label>
             </fieldset>
             <input type="submit" value="Join the Chamber">
         </form>
@@ -132,7 +132,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
-    <script src="scripts/mode.js"></script>
     <script src="scripts/form.js"></script>
 </body>
 

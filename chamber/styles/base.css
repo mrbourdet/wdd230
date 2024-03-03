@@ -490,6 +490,7 @@ footer {
     color: var(--primary-color);
     font-size: .9rem;
 }
+.wf1 textarea,
 .wf1 input[type="password"],
 .wf1 input[type="text"],
 .wf1 input[type="tel"],
@@ -527,6 +528,12 @@ footer {
     border-right: solid 8px red;
 }
 .wf1 input:required:valid {
+    border-right: solid 8px green;
+}
+.wf1 input:valid {
+    border-right: solid 8px green;
+}
+.wf1 textarea:valid {
     border-right: solid 8px green;
 }
 .wf1 #rangevalue {
