@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You</title>
+    <title>Valley Stream Chamber of Commerce</title>
+    <meta name="description" content="Thank You - Valley Stream Chamber of Commerce">
+    <meta name="author" content="Michael R. Bourdet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link type="text/css" rel="stylesheet" href="styles/base.css">
+    <!-- min-width: 768px -->
+    <link type="text/css" rel="stylesheet" href="styles/standard.css">
+    <!-- min-width: 1024px -->
+    <link type="text/css" rel="stylesheet" href="styles/large.css">
+    <!-- min-width: 1200px -->
+    <link type="text/css" rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Valley Stream Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://mrbourdet.github.io/wdd230/chamber/images/chamber/images/rsz_rockaway_sm.webp">
+    <meta property="og:url" content="https://mrbourdet.github.io/wdd230/lesson03/chamber/thankyou.html">
 </head>
+
 <body>
-    <h1>Thank you!</h1>
+    <header>
+        <h1><img src="images/images.webp" id="logo" alt="logo">Valley Stream Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#join" class="active">Join</a></li>
+        </ul>
+    </nav>
+    <!-- <picture class="hero">
+        <source media="(max-width: 400px)" srcset="images/rsz_rockaway_sm.webp">
+        <source media="(max-width: 960px)" srcset="images/rockaway.webp">
+        <source media="(max-width: 1200px)" srcset="images/rockaway-medium.webp">
+        <source media="(max-width: 1600px)" srcset="images/rockaway-large.webp">
+        <img src="images/rockaway.webp" alt="Rockaway Parkway Business District" width="800" height="264" id="hero">
+    </picture>
+    <h3>Money Magazine names Valley Stream best place to live in New York</h3> -->
+    <button id="menu" value="Menu" type="button"></button>
+    <!-- <div class="buttons">
+        <button class="button-1" type="button"
+            onclick="location.href='https://money.com/best-places-to-live-every-state-us/'">Read Article</button>
+        <button class="button-2" type="button">Join Us!</button>
+    </div> -->
+    <div id="mode"> 🕶️ </div>
+    <main>
+        <h2>Thank you for joining.</h2>
+        <p>A representative will contact you shortly.</p>
+    </main>
+    <footer>
+        <p id="curyear"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/mode.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
+
+
 </html>

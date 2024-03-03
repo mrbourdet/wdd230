@@ -60,4 +60,8 @@
         display: block;
         flex: 1 1 100%;
       }
+      .gold, .silver, .bronze, .free {
+        padding: .5rem;
+        grid-column: 2/3;
+      }
   } 

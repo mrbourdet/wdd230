@@ -30,30 +30,16 @@
     </header>
     <nav>
         <ul class="navigation">
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="#">Directory</a></li>
-            <li><a href="#join">Join</a></li>
+            <li><a href="#join" class="active">Join</a></li>
         </ul>
     </nav>
-    <picture class="hero">
-        <source media="(max-width: 400px)" srcset="images/rsz_rockaway_sm.webp">
-        <source media="(max-width: 960px)" srcset="images/rockaway.webp">
-        <source media="(max-width: 1200px)" srcset="images/rockaway-medium.webp">
-        <source media="(max-width: 1600px)" srcset="images/rockaway-large.webp">
-        <img src="images/rockaway.webp" alt="Rockaway Parkway Business District" width="800" height="264" id="hero">
-    </picture>
-    <h3>Money Magazine names Valley Stream best place to live in New York</h3>
     <button id="menu" value="Menu" type="button"></button>
-
-    <div class="buttons">
-        <button class="button-1" type="button"
-            onclick="location.href='https://money.com/best-places-to-live-every-state-us/'">Read Article</button>
-        <button class="button-2" type="button">Join Us!</button>
-    </div>
     <div id="mode"> 🕶️ </div>
     <main>
-        <form action="record.html" method="get" class="wf2">
+        <form action="thankyou.html" method="get" class="wf1">
             <fieldset>
                 <legend>Applicant Information</legend>
                 <label>First Name* 
@@ -63,31 +49,82 @@
                     <input type="text" name="lname" id="lname" required>
                 </label>
                 <label>Title or Position 
-                    <input type="text" name="title" id="title">
+                    <input type="text" name="title" id="title" required pattern="[a-zA-Z\- ]{7,}">
                 </label>
-                <div id="formmessage"></div>
                 <label>Email* 
                     <input type="email" name="email" id="email" placeholder="me@example.org" title="A valid email address." pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
                 </label>
-                <div id="rangevalue">0</div>
-                <label>Page Rating 
-                    <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="rangevalues">
+                <label>Business/Organization Name* 
+                    <input type="text" name="busName" id="busName" required>
+                </label>
+                <label>Business/Organization Description 
+                    <input type="text" name="busDesc" id="busDesc">
+                </label><br>
+                Membership Level <div id="rangevalue">Gold Membership</div>
+                <label> 
+                    <input type="range" id="level" name="level" min="1" max="4" value="4" step="1" list="rangevalues">
                     <datalist id="rangevalues">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
+                        <option value="1" label="❤️" name="NP Membership (free)">NP Membership (free)</option>
+                        <option value="2" label="🥉" name="Bronze Membership">Bronze Membership</option>
+                        <option value="3" label="🥈" name="Silver Membership">Silver Membership</option>
+                        <option value="4" label="🥇" name="Gold Membership">Gold Membership</option>
                     </datalist>
                 </label>
+                    <input type="hidden" name="curDateTime" id="curDateTime">
             </fieldset>
-            <input type="submit" value="Send Info">
+            <input type="submit" value="Join the Chamber">
         </form>
+        <div class="membershipPrivileges">
+            <div class="gold">
+                <h3>Gold Membership:</h3>
+                <ul>
+                    <li>Exclusive access to high-profile networking events with industry leaders.</li>
+                    <li>Priority placement in chamber publications and directories.</li>
+                    <li>Complimentary tickets to premium workshops and seminars.</li>
+                    <li>Personalized introductions to potential business partners and clients.</li>
+                    <li>Dedicated account manager for personalized support and assistance.</li>
+                    <li>Logo placement on the chamber's website and promotional materials.</li>
+                    <li>Opportunity to host or sponsor chamber events for increased visibility.</li>
+                </ul>
+            </div>
+            <div class="silver">
+                <h3>Silver Membership:</h3>
+                <ul>
+                    <li>Access to chamber networking events and mixers.</li>
+                    <li>Listing in chamber publications and directories.</li>
+                    <li>Discounted rates for workshops, seminars, and advertising opportunities.</li>
+                    <li>Invitation to member-only educational sessions and panels.</li>
+                    <li>Access to chamber resources, such as market research reports and business tools.</li>
+                    <li>Recognition as a Silver Member on the chamber's website.</li>
+                    <li>Referral services connecting businesses with potential clients or partners.</li>
+                </ul>
+            </div>
+            <div class="bronze">
+                <h3>Bronze Membership:</h3>
+                <ul>
+                    <li>Entry-level access to chamber networking events.</li>
+                    <li>Basic listing in chamber publications and directories.</li>
+                    <li>Discounted rates for select workshops, seminars, and advertising.</li>
+                    <li>Access to chamber resources, including online forums and webinars.</li>
+                    <li>Opportunity to participate in chamber committees and task forces.</li>
+                    <li>Bronze Member badge for display on website and marketing materials.</li>
+                    <li>Member-to-member discounts with other chamber businesses.</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="free">
+                <h3><h3>Non-profit Organizations<br>Free Membership:</h3></h3>
+                <ul>
+                    <li>Access to select chamber networking events and mixers.</li>
+                    <li>Basic online listing in chamber directories.</li>
+                    <li>Limited access to chamber resources, such as online newsletters.</li>
+                    <li>Invitation to select educational sessions and workshops.</li>
+                    <li>Opportunity to attend chamber-sponsored community events.</li>
+                    <li>Free Member badge for display on website and marketing materials.</li>
+                    <li>Access to chamber job postings and internship opportunities.</li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer>
         <p id="curyear"></p>
@@ -96,7 +133,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/mode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 
 
