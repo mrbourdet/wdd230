@@ -15,7 +15,7 @@ const displayLessons = (lessons) => {
      lessons.forEach((lesson) => {
         console.log(lesson)
     });
-    
+}    
         //  links.forEach((link) => {
         //     let linkurl= link.url;
         //     let linktitle= link.title;
