@@ -13,17 +13,19 @@ const lessonlinks = document.querySelector('.links');
 
 const displayLessons = (lessons) => {
      lessons.forEach((lesson) => {
-         links.forEach((link) => {
-            let linkurl= link.url;
-            let linktitle= link.title;
-            let links = document.createElement('section');
-            let week = document.createElement('p');
-            let assignment = document.createElement('a');
-            const weekline = `Week ${lesson}: <a href=${data.url}>${data.title}</a>`;
-            console.log(weekline);
-        });
+        console.log(lesson)
     });
-}
+    
+        //  links.forEach((link) => {
+        //     let linkurl= link.url;
+        //     let linktitle= link.title;
+        //     let links = document.createElement('section');
+        //     let week = document.createElement('p');
+        //     let assignment = document.createElement('a');
+        //     const weekline = `Week ${lesson}: <a href=${data.url}>${data.title}</a>`;
+        //     console.log(weekline);
+        // });
+
     //   // Create elements to add to the div.cards element
     //   let links = document.createElement('section');
     //   let week = document.createElement('p');
