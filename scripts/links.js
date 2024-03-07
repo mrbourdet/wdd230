@@ -4,23 +4,26 @@ const linksURL = "https://mrbourdet.github.io/wdd230/data/links.json";
 async function getLinks() {
   const response = await fetch(linksURL);
   const data = await response.json();
-  console.log(data);
+  //console.log(data);
+  displayLessons(data.lessons)
 }
   
 getLinks();
-//const lessonlinks = document.querySelector('.links');
-// const displayLessons = (lessons) => {
-//     lessons.forEach((lesson) => {
-//         links.forEach((link) => {
-//             let linkurl= link.url;
-//             let linktitle= link.title;
-//             let links = document.createElement('section');
-//             let week = document.createElement('p');
-//             let assignment = document.createElement('a');
-//             const weekline = `Week ${lesson}: <a href=${data.url}>${data.title}</a>`;
-//         });
-//     });
-// }
+const lessonlinks = document.querySelector('.links');
+
+const displayLessons = (lessons) => {
+     lessons.forEach((lesson) => {
+         links.forEach((link) => {
+            let linkurl= link.url;
+            let linktitle= link.title;
+            let links = document.createElement('section');
+            let week = document.createElement('p');
+            let assignment = document.createElement('a');
+            const weekline = `Week ${lesson}: <a href=${data.url}>${data.title}</a>`;
+            console.log(weekline);
+        });
+    });
+}
     //   // Create elements to add to the div.cards element
     //   let links = document.createElement('section');
     //   let week = document.createElement('p');
