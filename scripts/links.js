@@ -12,8 +12,9 @@ getLinks();
 const lessonlinks = document.querySelector('.links');
 
 const displayLessons = (lessons) => {
-     lessons.forEach((lesson) => {
-        console.log(lesson.links)
+     lessons.forEach((lessonItem) => {
+        let lessonNumber = lessonItem.lesson;
+        console.log(lessonNumber);
     });
    
         //  links.forEach((link) => {
