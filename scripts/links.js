@@ -13,8 +13,7 @@ const lessonlinks = document.querySelector('.links');
 
 const displayLessons = (lessons) => {
      lessons.forEach((lesson) => {
-        let lessonNumber = lesson.lesson
-        console.log(lessonNumber)
+        console.log(lesson.links)
     });
    
         //  links.forEach((link) => {
