@@ -24,29 +24,33 @@ p {
     font-size: clamp(9px, 1rem, 16px);
 }
 main {
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
-    background-color: azure;
+
+    background-color: lightsteelblue;
     border-style: solid;
     border-color: #999;
     box-shadow: 0 0 15px #999;
     
+    padding: 1rem;
+    
   }
-#card {
-    background-color: skyblue;
+#cards {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2px;
+}
+#cards section{
+    background-color: rgb(164, 170, 240);
     padding: 1rem;
     border-style: solid;
-    border-width: 2px;
-    border-color: #999;
-    gap: 1rem;
-    grid-column: auto;
-    grid-row: auto;
+    border-color: rgb(94, 98, 163);
 }
 img {
     margin: 1rem;
-    padding: 1rem;
-    box-shadow: 0 0 15px #999;
-    width: clamp(170px, 90%, 340px);
-    height: clamp(220px, 90%, 440px);
+    box-shadow: 0 0 15px #000;
+    width: 70%;
+    height: auto;
+    /* width: clamp(170px, 90%, 340px);
+    height: clamp(220px, 90%, 440px); */
 
 }
