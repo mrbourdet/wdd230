@@ -157,4 +157,10 @@ h2 {
 iframe{
   border:0;
 }
+.links{
+  margin: .25rem;
+}
+.links p{
+  padding: .25rem;
+}
   

@@ -1,57 +1,26 @@
 const baseURL = "https://mrbourdet.github.io/wdd230/";
 const linksURL = "https://mrbourdet.github.io/wdd230/data/links.json";
+const lessonlinks = document.querySelector('.links');
 
 async function getLinks() {
   const response = await fetch(linksURL);
   const data = await response.json();
   //console.log(data);
+  //console.log(data.lessons[0].links[0].url);
   displayLessons(data.lessons)
 }
   
 getLinks();
-const lessonlinks = document.querySelector('.links');
 
-const displayLessons = (lessons) => {
-     lessons.forEach((lessonItem) => {
-        let lessonNumber = lessonItem.lesson;
-        console.log(lessonNumber);
+
+const displayLessons = (weeks) => {
+    weeks.forEach((lessonItem) => {
+        console.log("outer loop", lessonItem);
+        let arr2 = lessonItem.links;
+        arr2.foreach((elem) => {
+            console.log("inner loop",elem);
+        });
+        // console.log(data.lessons.links);
     });
-   
-        //  links.forEach((link) => {
-        //     let linkurl= link.url;
-        //     let linktitle= link.title;
-        //     let links = document.createElement('section');
-        //     let week = document.createElement('p');
-        //     let assignment = document.createElement('a');
-        //     const weekline = `Week ${lesson}: <a href=${data.url}>${data.title}</a>`;
-        //     console.log(weekline);
-        // });
-
-    //   // Create elements to add to the div.cards element
-    //   let links = document.createElement('section');
-    //   let week = document.createElement('p');
-    //   let assignment = document.createElement('a');
-    //   const weekline = `Week ${lesson}: <a ${data.url}>${data.title}</a>`;
-
-    // //   <a href= "images/w3schools.com_combinator_exercise.png">w3schools.com Combinator Exercise</a>
-  
-    //   // Build the h2 content out to show the prophet's full name
-    //   fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-    //   dob.textContent = `Date of Birth: ${prophet.birthdate}`;
-    //   pob.textContent = `Place of Birth: ${prophet.birthplace}`;
-    //   // Build the image portrait by setting all the relevant attributes
-    //   portrait.setAttribute('src', prophet.imageurl);
-    //   portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
-    //   portrait.setAttribute('loading', 'lazy');
-    //   portrait.setAttribute('width', '340');
-    //   portrait.setAttribute('height', '440');
-  
-    //   // Append the section(card) with the created elements
-    //   card.appendChild(weekline);
-    //   card.appendChild(dob);
-    //   card.appendChild(pob);
-    //   card.appendChild(portrait);
-  
-    //   cards.appendChild(card);
-    // }); // end of arrow function and forEach loop
-}
+       
+    };
