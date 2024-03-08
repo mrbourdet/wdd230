@@ -5,22 +5,26 @@ const lessonlinks = document.querySelector('.links');
 async function getLinks() {
   const response = await fetch(linksURL);
   const data = await response.json();
-  //console.log(data);
-  //console.log(data.lessons[0].links[0].url);
-  displayLessons(data.lessons)
+  displayLinks(data.lessons)
 }
   
 getLinks();
 
 
-const displayLessons = (weeks) => {
-    weeks.forEach((lessonItem) => {
-        console.log("outer loop", lessonItem);
-        let arr2 = lessonItem.links;
-        arr2.foreach((elem) => {
-            console.log("inner loop",elem);
+const displayLinks = (weeks) => {
+    weeks.forEach((week) => {
+        const pp = document.createElement("p");
+        pp.textContent = `Lesson ${week.lesson}: `;
+
+        week.links.forEach((lesson) => {
+            const aa = document.createElement("a");
+
+            aa.setAttribute("href", `${lesson.url}`);
+            aa.textContent = `${lesson.title}  |  `;
+
+            pp.appendChild(aa);
+
         });
-        // console.log(data.lessons.links);
+        lessonlinks.appendChild(pp);
     });
-       
-    };
+};
