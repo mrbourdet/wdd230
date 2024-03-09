@@ -631,3 +631,23 @@ button:disabled {
     list-style-type: "❤️";
     margin: 1rem;
 }
+#directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2px;
+}
+#directory section{
+    background-color: rgb(164, 170, 240);
+    padding: 1rem;
+    border-style: solid;
+    border-color: rgb(94, 98, 163);
+}
+#directory img {
+    margin: 1rem;
+    box-shadow: 0 0 15px #000;
+    width: 70%;
+    height: auto;
+    /* width: clamp(170px, 90%, 340px);
+    height: clamp(220px, 90%, 440px); */
+
+}

@@ -1,5 +1,5 @@
 const url = "https://mrbourdet.github.io/wdd230/chamber/data/members.json";
-const cards = document.querySelector('#cards');
+const cards = document.querySelector('#directory');
 async function getCompanyData() {
     const response = await fetch(url);
     const data = await response.json();
