@@ -71,7 +71,7 @@
             "zip":      "11580",
             "phone":    "5162506638",
             "website":  "",
-            "imageurl": "images/arrowhead.png",
+            "imageurl": "images/arrowhead.webp",
             "level":    "silver",
             "genre":    "Real Estate"
         },
@@ -86,7 +86,7 @@
             "zip":      "11580",
             "phone":    "5162182811",
             "website":  "http://www.thecornerstore260.com",
-            "imageurl": "http://thecornerstore260.com/wp-content/uploads/2016/07/thecornerstorelogo.jpg",
+            "imageurl": "images/thecornerstorelogo.webp",
             "level":    "bronze",
             "genre":    "Food and Beverage"
         },
@@ -101,7 +101,7 @@
             "zip":      "11358",
             "phone":    "9177473126",
             "website":  "http://homesforheroes.com/affiliate/renita-nal",
-            "imageurl": "https://www.homesforheroes.com/wp-content/themes/hfh/images/logo__hfh-white-outline.svg",
+            "imageurl": "images/hfhlogo.webp",
             "level":    "silver",
             "genre":    "Real Estate"
         },
@@ -116,7 +116,7 @@
             "zip":      "11581",
             "phone":    "5162334541",
             "website":  "http://www.wingsover.com/",
-            "imageurl": "https://www.wingsover.com/images/icons/WingsOver_Logo-01.svg",
+            "imageurl": "images/WingsOver_Logo-01.webp",
             "level":    "bronze",
             "genre":    "Food and Beverage"
         }
