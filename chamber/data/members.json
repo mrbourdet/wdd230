@@ -11,7 +11,7 @@
             "zip":      "11581",
             "phone":    "9175551212",
             "website":  "http://www.americanlegion854.com",
-            "imageurl": "https://www.valleystreamchamber.org/members/american-legion-854/",
+            "imageurl": "images/American-Legion-Logo-150x150.png",
             "level":    "free",
             "genre":    "Veterans Organization"
         },
@@ -26,7 +26,7 @@
             "zip":      "11580",
             "phone":    "5168370777",
             "website":  "https://allteamstaffing.com/locations/new-york-ny-queens/",
-            "imageurl": "http://allteamstaffing.com/wp-content/uploads/2021/07/allteam-logo.png",
+            "imageurl": "images/allteam-logo.png",
             "level":    "silver",
             "genre":    "Staffing Agency"
         },
@@ -41,7 +41,7 @@
             "zip":      "11580",
             "phone":    "5168255066",
             "website":  "http://www.airdesigninc.com",
-            "imageurl": "https://airdesigninc.wpenginepowered.com/wp-content/uploads/2021/06/air-design-logo-1024x225.png",
+            "imageurl": "images/air-design-logo.webp",
             "level":    "gold",
             "genre":    "Air Conditioning"
         },
@@ -56,7 +56,7 @@
             "zip":      "11565",
             "phone":    "5165991274",
             "website":  "http://www.antoniositaliangourmet.com",
-            "imageurl": "https://www.antoniositaliangourmet.com/wordpress/wp-content/themes/html5blank-stable/img/logo-antonios-deli.png",
+            "imageurl": "images/logo-antonios-deli.webp",
             "level":    "bronze",
             "genre":    "Food and Beverage"
         },
