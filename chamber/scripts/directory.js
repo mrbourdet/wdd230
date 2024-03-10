@@ -3,7 +3,7 @@ const cards = document.querySelector('#directory');
 async function getCompanyData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.companies); // temporary testing of data retreival
+    // console.table(data.companies); // temporary testing of data retreival
     displayDirectory(data.companies);
   }
   
