@@ -671,7 +671,7 @@ button:disabled {
 
 #directory.list section {
 	display: grid;
-	grid-template-columns: 1.25fr 1fr 2.5fr .5fr .5fr .5fr 1.5fr;
+	grid-template-columns: 1.25fr 1fr 2.5fr 1fr .5fr .5fr 1.5fr;
 	margin: 0;
 	padding: 0.25rem;
     text-align: left;

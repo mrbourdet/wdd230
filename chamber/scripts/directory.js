@@ -33,7 +33,7 @@ async function getCompanyData() {
       title.textContent = `${company.title}`;
       email.textContent = `Email`;
       address.textContent = `${company.address}, ${company.city}, ${company.state}  ${company.zip}`;
-      phone.textContent = `☎️${company.phone}`;
+      phone.textContent = `${company.phone}`;
       website.textContent = `Website`;
       level.textContent = `Membership Level: ${company.level.toUpperCase()}`;
       const aa = document.createElement("a");
