@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 @media screen and (min-width: 1200px){
  
-    main { /* Change for media queries*/
+    .index-main { /* Change for media queries*/
         display: grid;
         grid-template-columns: 33% 33% 33%;
         background: white;

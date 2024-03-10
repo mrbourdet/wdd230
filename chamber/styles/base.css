@@ -107,7 +107,7 @@ ul {
     list-style: none;
 }
 
-main {
+.index-main {
     /* Change fo media queries*/
     display: grid;
     background: white;
@@ -637,17 +637,59 @@ button:disabled {
     gap: 2px;
 }
 #directory section{
-    background-color: rgb(164, 170, 240);
+    /* background-color: rgb(164, 170, 240); */
     padding: 1rem;
     border-style: solid;
-    border-color: rgb(94, 98, 163);
+    border-color: var(--primary-color);
+    text-align: center;
 }
 #directory img {
     margin: 1rem;
-    box-shadow: 0 0 15px #000;
-    width: 70%;
+    /* box-shadow: 0 0 15px #000; */
+    width: 50%;
     height: auto;
     /* width: clamp(170px, 90%, 340px);
     height: clamp(220px, 90%, 440px); */
 
+}
+.list-menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+
+.list-menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+#directory.list {
+	display: flex;
+	flex-direction: column;
+}
+
+#directory.list section {
+	display: grid;
+	grid-template-columns: 1.25fr 1fr 2.5fr .5fr .5fr .5fr 1.5fr;
+	margin: 0;
+	padding: 0.25rem;
+    text-align: left;
+}
+
+#directory.list section > * {
+	margin: 0 1rem;
+}
+
+#directory.list section img {
+	display: none; /* smaller viewports only */
+}
+
+#directory.list section h2 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+#directory.list section:nth-child(even) {
+	background-color: #bed;
 }
