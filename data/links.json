@@ -94,6 +94,15 @@
                     "title": "Page Links JSON"
                 }
             ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "lesson10/weather.html",
+                    "title": "Open Weather Map.org API test"
+                }
+            ]
         }
     ]
 }
