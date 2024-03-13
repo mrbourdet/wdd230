@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": -73.7085,
+        "lat": 40.6643
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 50.54,
+        "feels_like": 47.88,
+        "temp_min": 43.97,
+        "temp_max": 56.97,
+        "pressure": 1011,
+        "humidity": 55
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 5.01,
+        "deg": 30
+    },
+    "clouds": {
+        "all": 35
+    },
+    "dt": 1710302498,
+    "sys": {
+        "type": 2,
+        "id": 2079546,
+        "country": "US",
+        "sunrise": 1710328143,
+        "sunset": 1710370766
+    },
+    "timezone": -14400,
+    "id": 5142109,
+    "name": "Valley Stream",
+    "cod": 200
+}

@@ -163,4 +163,11 @@ iframe{
 .links p{
   padding: .25rem;
 }
+.weather {
+  background-color:#14334b;
+  vertical-align: text-top;
+  font-size: larger;
+  color: #fff;
+  padding: 10px;
+}
   

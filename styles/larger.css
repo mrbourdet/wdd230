@@ -75,11 +75,12 @@ h2 {
     font-size: 1em;
     text-align: center;
     grid-column: 1/3;
+    grid-row: 2/3;
   }
 .card {
     text-align: left;
     grid-column: auto;
-    grid-row: 2/3;
+    grid-row: 3/4;
 
   
 }
