@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
 @media screen and (min-width: 400px){
  
-body{
-    font-family: 'Raleway', sans-serif;
-} 
 body {
     display: grid;
     width: 100vw;
@@ -59,7 +53,8 @@ ul {
 }
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    /* grid-template-columns: 1fr 1fr;  */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem; 
     background: white;
   }
@@ -74,7 +69,7 @@ h2 {
     font-style: normal;
     font-size: 1em;
     text-align: center;
-    grid-column: 1/3;
+    grid-column: 1/4;
     grid-row: 2/3;
   }
 .card {
