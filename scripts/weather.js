@@ -1,5 +1,6 @@
 const currentTemp = document.querySelector('.temp');
 const weatherIcon = document.querySelector('.weather-icon');
+const desc = document.querySelector('.desc');
 //const captionDesc = document.querySelector('figcaption');
 const apiKey = "0dc2835c1f834a1874a6f13e7e20ccc9";
 const latlong = [40.6643, -73.7085]; // Valley Stream NY
@@ -28,10 +29,19 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    currentTemp.textContent = `${Math.round(data.main.temp)}`;
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
+    desc.textContent = ` - ${titleCase(data.weather[0].description)}`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     //captionDesc.textContent = `${desc}`;
+}
+
+ 
+function titleCase(str) {
+    str = str.toLowerCase().split(' ');
+    for (let i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    return str.join(' ');
 }
