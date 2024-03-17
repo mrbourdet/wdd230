@@ -1,5 +1,5 @@
 const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
+const weatherIcon = document.querySelector('.weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const apiKey = "0dc2835c1f834a1874a6f13e7e20ccc9";
 const lat = "49.7557";

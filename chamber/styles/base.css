@@ -64,7 +64,9 @@ header h1 {
     text-align: left;
     padding-left: 1rem;
 }
-
+h3{
+    padding: .5em;
+}
 #logo {
     padding: 1rem 1rem 0rem 1rem;
     width: 15vw;
@@ -291,18 +293,19 @@ footer {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 1em;
-    z-index: 1;
+    /* padding: 2em; */
+    margin: .5rem;
+    /* z-index: 1; */
 }
 
 .button-1,
 .button-2 {
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
     border: 0;
-    border-radius: 100px;
+    border-radius: 6px;
     box-sizing: border-box;
-    color: #ffffff;
+    color: #000;
     cursor: pointer;
     display: inline-block;
     font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -310,12 +313,12 @@ footer {
     font-weight: 600;
     justify-content: center;
     line-height: 20px;
-    width: 140px;
-    min-height: 40px;
-    min-width: 0px;
-    padding: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 500px;
+    /* min-height: 40px;
+    min-width: 0px; */
+    padding: 10px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -327,18 +330,18 @@ footer {
 
 }
 
-button:hover,
-button:focus {
+.button-1:hover,
+.button-1:focus {
     background-color: #16437E;
     color: #ffffff;
 }
 
-button:active {
+.button-1:active {
     background: #09223b;
     color: rgb(255, 255, 255, .7);
 }
 
-button:disabled {
+.button-1:disabled {
     cursor: not-allowed;
     background: rgba(0, 0, 0, .08);
     color: rgba(0, 0, 0, .3);
@@ -346,11 +349,11 @@ button:disabled {
 
 .ads {
     margin: 2vh;
+    padding: 8px;
+    line-height: 200%;
     background-color: rgb(208, 208, 208);
-    color: #000;
-    padding: 2vw;
-    border-style: dashed;
-    border-color: #000;
+    color: #FFF;
+    background: maroon;
     border-width: 2px;
     border-radius: 10px;
     /* align-self: safe; */
@@ -436,8 +439,8 @@ button:disabled {
 } */
 
 .weather-icon {
-    width: 100px;
-    margin-top: -10px;
+    width: 64px;
+    margin-top: -5px;
 }
 
 .weather h4 {
@@ -691,4 +694,62 @@ button:disabled {
 
 #directory.list section:nth-child(even) {
 	background-color: #bed;
+}
+.popup-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.popup-container.active{
+    opacity: 1;
+    pointer-events: auto;
+    transition: .4s ease;
+}
+.popup-container .popup-box {
+    width: 35rem;
+    background: #f2f2f2;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(0,0,0, .1);
+    padding: 30px;
+    transform: scale(0);
+    transition-delay: .25s;
+}
+.popup-container.active .popup-box {
+    transform: scale(1);
+    transition: .4s ease;
+
+}
+.popup-box h2{
+    color: maroon;
+    line-height: 1;
+}
+.popup-box h3{
+    color: var(--prussian-blue);
+    line-height: 1;
+    padding-bottom: 10px;
+}
+.popup-box p{
+    color: #333;
+    margin: 12px 0 20px;
+}
+.popup-box .close-btn {
+    width: 100%;
+    height: 45px;
+    background: var(--selective-yellow);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgb(0,0,0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
 }

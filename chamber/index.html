@@ -36,6 +36,19 @@
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
+    <div class="popup-container" class="active">
+        <div class="popup-box">
+          <h2>Join Us for a Memorable Evening!</h2>
+          <h3>Valley Stream Chamber of Commerce Meet and Greet</h3> 
+          <p><strong>Date: </strong>Wednesday, March 20 7:00 pm</p>
+          <p><strong>Location: </strong>BJ's Brewhouse, 5 Green Acres Rd. W, Valley Stream NY 11581</p>
+          <p>Get ready to network, connect, and discover new opportunities at the Valley Stream Chamber of Commerce Meet and Greet! Join us for an evening of camaraderie and collaboration as we come together to strengthen our local business community.</p>
+          <p>Don't miss out on this chance to meet fellow entrepreneurs, share insights, and forge valuable relationships. Whether you're a seasoned professional or just starting out, everyone is welcome!</p>
+          <p>Come join us at BJ's Brewhouse for an unforgettable experience. See you there!</p>
+          <p>RSVP to Hannah (516) 555-1212</p> <button class="close-btn">OK</button>
+
+        </div>
+    </div>
     <picture class="hero">
         <source media="(max-width: 400px)" srcset="images/rsz_rockaway_sm.webp">
         <source media="(max-width: 960px)" srcset="images/rockaway.webp">
@@ -43,24 +56,28 @@
         <source media="(max-width: 1600px)" srcset="images/rockaway-large.webp">
         <img src="images/rockaway.webp" alt="Rockaway Parkway Business District" width="800" height="264" id="hero">
     </picture>
-    <h3>Money Magazine names Valley Stream best place to live in New York</h3>
+    <!-- <h3>Money Magazine names Valley Stream best place to live in New York</h3> -->
     <button id="menu" value="Menu" type="button"></button>
 
-    <div class="buttons">
+    <!-- <div class="buttons">
         <button class="button-1" type="button"
-            onclick="location.href='https://money.com/best-places-to-live-every-state-us/'">Read Article</button>
-        <button class="button-2" type="button" onclick="location.href='join.html'">Join Us!</button>
-    </div>
+            onclick="location.href='https://money.com/best-places-to-live-every-state-us/'">Read Article</button> -->
+        <!-- <button class="button-2" type="button" onclick="location.href='join.html'">Join Us!</button> -->
+    <!-- </div> -->
     <div id="mode"> 🕶️ </div>
     <main class="index-main">
+        
         <section class="card">
             <h3>Current Events</h3>
-            <ul>
-                <li>
-                    <p>Feb 13, 2024 - Fundraising Social</p>
-                    <p>5:30 pm @ BJ's Brewhouse</p>
-                </li>
-            </ul>
+        <ul>
+            <li>
+                <p>Wednesday, March 20 at 7:00 pm</p>
+                <p>Valley Stream Chamber of Commerce Meet and Greet</p>
+                <p>@ BJ's Brewhouse</p>
+            </li>
+        </ul>    
+
+       
         </section>
         <section class="card">
             <h3>Support these VSCC Members</h3>
@@ -68,7 +85,7 @@
                 Bethpage Federal Credit Union
             </div>
             <div class="ads">
-                BJ’s Restaurant & Brewhouse
+                BJ's Restaurant & Brewhouse
             </div>
             <div class="ads">
                 Jewel Human Services
@@ -78,14 +95,11 @@
             <h3>Community</h3>
 
             <div class="weather-card">
-                <!-- <div class="search">
-                    <input type="text" placeholder="enter city name" spellcheck="false">
-                    <button type="button"><img src="images/search.png" alt=""></button>
-                </div> -->
                 <div class="weather">
-                    <h5 class="city">New York</h5>
-                    <img src="images/snow.png" alt="snow" class="weather-icon">
-                    <h4><span class="temp"></span>°F</h4>
+                    <h5 class="city"></h5>
+                    <p class="conditions"></p>
+                    <img src="" alt="" class="weather-icon">
+                    <h4><span class="temp"></span></h4>
                     <div class="details">
                         <div class="col">
                             <img src="images/humidity.png" alt="humidity">
@@ -111,17 +125,12 @@
                     </div>
 
                 </div>
+
+            </div>
+            <div class="forecast-container">
+                <div class="forecast"></div>
             </div>
         </section>
-
-        <!-- <section id="join" class="card">
-            <h3>Join Us</h3>
-            <ul>
-                <li>Grow your network.</li>
-                <li>Learn from your peers.</li>
-                <li>Help the community thrive!</li>
-            </ul>
-        </section> -->
     </main>
     <footer>
         <p id="curyear"></p>
@@ -130,7 +139,9 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/mode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/popup.js"></script>
 </body>
 
 

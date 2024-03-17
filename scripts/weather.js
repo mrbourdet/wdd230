@@ -1,16 +1,20 @@
+// Set up variables for temp. icon, and description
 const currentTemp = document.querySelector('.temp');
 const weatherIcon = document.querySelector('.weather-icon');
 const desc = document.querySelector('.desc');
-//const captionDesc = document.querySelector('figcaption');
+
+// set up API variables and url
 const apiKey = "0dc2835c1f834a1874a6f13e7e20ccc9";
 const latlong = [40.6643, -73.7085]; // Valley Stream NY
 const lat = latlong[0];
 const lon = latlong[1];
-const units = "imperial";
-const urlBase = `https://api.openweathermap.org/data/2.5/weather?lat=57&lon=-2.15&appid={API key}&units=imperial`;
-
+const units = "imperial"; //(default = kelvin) Fahrenheit=imperial, Celsius=metric
+// https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+// params after ? lat=lattitude lon=longitude appid=apiKey units=imperial separate with & character
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
 console.log(url);
+
+// Fetch weather data from openweathermao.org
 
 async function apiFetch() {
     try {
