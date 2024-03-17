@@ -450,9 +450,9 @@ footer {
 }
 
 .weather h5 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 400;
-    margin-top: -5px;
+    margin-bottom: 10px;
 }
 
 .details {
@@ -706,6 +706,8 @@ footer {
     justify-content: center;
     align-items: center;
     opacity: 0;
+    z-index: 1;
+    
     /* pointer-events: none; */
 }
 .popup-container.active{
@@ -752,4 +754,7 @@ footer {
     font-size: 18px;
     color: #333;
     font-weight: 500;
+}
+.forecast-container {
+    text-align: left;
 }
