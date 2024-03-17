@@ -706,11 +706,11 @@ footer {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 .popup-container.active{
     opacity: 1;
-    pointer-events: auto;
+    /* pointer-events: auto; */
     transition: .4s ease;
 }
 .popup-container .popup-box {
