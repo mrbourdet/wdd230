@@ -117,7 +117,7 @@ function displayForecast(foreData) {
       for (const day in dailyTemperatures) {
         let p = document.createElement('p');
         let weekday = document.createElement('p');
-        weekday.textContent= `${dailyTemperatures[day].wDay}., ${dailyTemperatures[day].mText}. ${day} --> High --- ${dailyTemperatures[day].high}°F, --- Low - ${dailyTemperatures[day].low}°F`;
+        weekday.textContent= `${dailyTemperatures[day].wDay}., ${dailyTemperatures[day].mText}. ${day} --> High: ${dailyTemperatures[day].high}°F, --- Low: ${dailyTemperatures[day].low}°F`;
         // p.textContent= `High - ${dailyTemperatures[day].high}°F,   Low - ${dailyTemperatures[day].low}°F`;
         card.appendChild(weekday);
         // card.appendChild(p);
