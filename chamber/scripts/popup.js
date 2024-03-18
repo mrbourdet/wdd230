@@ -6,10 +6,12 @@ const popupContainer = document.querySelector('.popup-container');
 const showPopup = document.querySelector('.show-popup');
 if (validDays.includes(eventDate)){
     popupContainer.classList.add("active");
+    popupContainer.style.zIndex = 0;
 }
 const closeBtn = document.querySelector('.close-btn');
 closeBtn.onclick = () => {
     popupContainer.classList.remove("active");
+    popupContainer.style.zIndex = -1;
 }
 // showPopup.onclick = () => {
 //     popupContainer.classList.add("active");
