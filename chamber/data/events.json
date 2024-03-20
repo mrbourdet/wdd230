@@ -1,0 +1,61 @@
+{
+    "events": [
+      {
+        "title": "Business Networking Breakfast",
+        "date": "2024-04-10",
+        "location": "Chamber of Commerce Building",
+        "description": "Join us for a networking breakfast where local business owners and professionals can connect, share ideas, and explore potential collaborations.",
+        "registration_link": "https://example.com/networking-breakfast-registration"
+      },
+      {
+        "title": "Small Business Workshop: Marketing Strategies",
+        "date": "2024-04-15",
+        "location": "Community Center",
+        "description": "Learn effective marketing strategies tailored to small businesses. Topics include social media marketing, email campaigns, and branding.",
+        "registration_link": "https://example.com/marketing-workshop-registration"
+      },
+      {
+        "title": "Entrepreneurship Panel Discussion",
+        "date": "2024-04-20",
+        "location": "City Hall Auditorium",
+        "description": "Join our panel of successful entrepreneurs as they share insights, challenges, and tips for starting and growing a business.",
+        "registration_link": "https://example.com/entrepreneurship-panel-registration"
+      },
+      {
+        "title": "Business After Hours Mixer",
+        "date": "2024-04-25",
+        "location": "Local Restaurant",
+        "description": "Relax and unwind after work while networking with fellow business professionals in a casual setting. Appetizers and drinks will be provided.",
+        "registration_link": "https://example.com/after-hours-mixer-registration"
+      },
+      {
+        "title": "Economic Outlook Conference",
+        "date": "2024-05-05",
+        "location": "Convention Center",
+        "description": "Gain insights into the local and regional economic landscape. Keynote speakers will discuss trends, forecasts, and opportunities.",
+        "registration_link": "https://example.com/economic-outlook-conference-registration"
+      },
+      {
+        "title": "Business Ethics Seminar",
+        "date": "2024-05-10",
+        "location": "Chamber of Commerce Building",
+        "description": "Explore ethical challenges faced by businesses and learn strategies for maintaining integrity and accountability.",
+        "registration_link": "https://example.com/ethics-seminar-registration"
+      },
+      {
+        "title": "Women in Business Luncheon",
+        "date": "2024-05-15",
+        "location": "Hotel Conference Room",
+        "description": "Celebrate and empower women in business with inspiring speakers, networking opportunities, and a delicious lunch.",
+        "registration_link": "https://example.com/women-in-business-luncheon-registration"
+      },
+      {
+        "title": "Startup Pitch Competition",
+        "date": "2024-05-20",
+        "location": "Tech Incubator",
+        "description": "Witness aspiring entrepreneurs pitch their business ideas to a panel of judges for a chance to win funding and mentorship.",
+        "registration_link": "https://example.com/pitch-competition-registration"
+      }
+    ]
+  }
+  

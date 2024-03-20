@@ -69,7 +69,7 @@ h3{
 }
 #logo {
     padding: 1rem 1rem 0rem 1rem;
-    width: 15vw;
+    width: clamp(75px, 10vw, 175px);;
     vertical-align: bottom;
 }
 .article {
