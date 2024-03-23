@@ -85,9 +85,9 @@ function displayForecast(foreData) {
         const date = new Date(item.dt * 1000); // Convert timestamp to Date object
         const day = date.getDate(); // Extract day of the month
         const temperature = item.main.temp; // Extract temperature
-        const weekDay = date.toLocaleString('en-US', { weekday: 'long' });
+        const weekDay = date.toLocaleString('en-US', { weekday: 'short' });
         const weekDate = date.toLocaleString('en-US', { day: 'numeric' });
-        const monthText = date.toLocaleString('en-US', { month: 'long' });
+        const monthText = date.toLocaleString('en-US', { month: 'short' });
   
         // Check if this day exists in the dailyTemperatures object
         if (!dailyTemperatures[day]) {
@@ -101,9 +101,9 @@ function displayForecast(foreData) {
           };
         } else {
           // If it exists, update the high and low temperatures if necessary
-          dailyTemperatures[day].wDay = date.toLocaleString('en-US', { weekday: 'short' });
-          dailyTemperatures[day].wDate = date.toLocaleString('en-US', { day: 'numeric' });
-          dailyTemperatures[day].mText = date.toLocaleString('en-US', { month: 'short' });
+          dailyTemperatures[day].wDay = weekDay;
+          dailyTemperatures[day].wDate = weekDate;
+          dailyTemperatures[day].mText = monthText;
           dailyTemperatures[day].high = Math.round(Math.max(dailyTemperatures[day].high, temperature));
           dailyTemperatures[day].low = Math.round(Math.min(dailyTemperatures[day].low, temperature));
         }

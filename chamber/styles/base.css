@@ -355,15 +355,23 @@ footer {
 }
 
 .ads {
-    margin: 2vh;
-    padding: 8px;
-    line-height: 200%;
-    background-color: rgb(208, 208, 208);
-    color: #FFF;
-    background: maroon;
+    /* margin: 2vh; */
+    /* padding: 8px; */
+    /* line-height: 200%; */
+    /* background-color: rgb(208, 208, 208); */
+    /* color: #FFF;
+    background: maroon; */
     border-width: 2px;
     border-radius: 10px;
     /* align-self: safe; */
+}
+.ads section{
+        /* background-color: rgb(164, 170, 240); */
+margin: 1em;
+padding: 1rem;
+border-style: solid;
+border-color: var(--primary-color);
+text-align: center;
 }
 
 #menu {
