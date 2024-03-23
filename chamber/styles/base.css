@@ -219,6 +219,9 @@ footer {
     color: white;
     font-size: clamp(12px, 1.5vw, 18px);
 }
+footer img{
+    vertical-align: middle;
+}
 
 /* h2 {
     font-family: var(--heading-font);
