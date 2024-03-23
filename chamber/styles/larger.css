@@ -60,4 +60,10 @@
         grid-column: 2/3;
       }
   } 
+  .join {
+    display: grid;
+}
+.membershipPrivileges {
+    grid-column: 2/3;
+}
   

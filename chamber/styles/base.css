@@ -291,10 +291,6 @@ footer img{
     padding: .5em;
 }
 
-#join h3 {
-    background: maroon;
-}
-
 #frame {
     padding: 5px;
 }
@@ -508,9 +504,9 @@ text-align: center;
     cursor: pointer;
 }
 
-.wf1 {
+/* .wf1 {
     grid-column: 1/2;
-}
+} */
 
 .wf1 fieldset {
     margin: 2rem 0;
@@ -808,3 +804,6 @@ text-align: center;
     padding-top: 5px;
 
 }
+/* .membershipPrivileges {
+    grid-column: 1/2;
+} */
