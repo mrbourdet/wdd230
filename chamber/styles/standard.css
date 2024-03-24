@@ -9,7 +9,7 @@
       /* Change fo media queries*/
       display: grid;
       width: 100%;
-      grid-template-columns: repeat(12, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       background: white;
     }
     .discover-hero:hover {
@@ -17,14 +17,14 @@
       border-radius: 100px;
     }
     .discover-col1{
-        grid-column: 1/5;
+        grid-column: 1/2;
         padding: 0 1em 1em 1em;
         border-style:solid;
         border-width: 8px;
         border-color: maroon;
     }
     .discover-col2{
-        grid-column: 5/13;
+        grid-column: 2/4;
         padding: 0 1em 1em 0;
         border-style:solid;
         border-width: 8px;
