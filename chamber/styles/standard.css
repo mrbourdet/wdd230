@@ -1,4 +1,4 @@
-@media screen  and (min-width: 500px) {
+@media screen  and (min-width: 600px) {
     
     .index-main { /* Change for media queries*/
       display: grid;

@@ -86,7 +86,7 @@ h3 {
 }
 
 nav {
-    max-width: 100vw;
+    /* max-width: 100vw; */
     background-color: maroon;
     padding: 2vw;
     font-size: clamp(14px, 2vw, 18px);
@@ -96,14 +96,14 @@ nav {
     display: flex;
     flex-direction: column;
     list-style: none;
-    width: 50vw;
+    /* width: 50vw; */
     background-color: maroon;
     color: white;
 }
 
 .navigation a {
     display: none;
-    padding: .1rem;
+    padding: 4px;
     padding-left: 2em;
     text-align: left;
     text-decoration: none;
